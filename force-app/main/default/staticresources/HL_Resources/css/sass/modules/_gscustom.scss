@@ -1,0 +1,115 @@
+@import "_task-management.scss";
+@import "_journeys.scss";
+
+.task-management_tabs-nav .slds-tabs--default__link {
+    @extend .slds-tabs_default__item;
+}
+
+.contact-list-checkbox .slds-checkbox .slds-checkbox_faux,
+.contact-list .slds-checkbox .slds-checkbox--faux,
+.contact-list .slds-checkbox .slds-checkbox_faux,
+.contact-filter .slds-checkbox .slds-checkbox_faux,
+.contact-filter .slds-checkbox .slds-checkbox--faux {
+    z-index: 1;
+}
+
+.slds-tabs--default,
+.slds-tabs_default,
+.slds-has-overflow .slds-tab__scroll-controls {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.contacts-list td:before,
+.slds-table td:before {
+    // line-height: 24.5px;
+}
+
+@media screen and (max-width:550px) {
+    .journey-card {
+        .slds-media__figure {
+            margin-right: 0px;
+            padding-right: 0px;
+        }
+        footer {
+            border-top: 0px;
+            padding: .75em 0;
+            .journey-card-step__metrics .slds-col {
+                background: $herbalife-darkblue;
+                padding: 5px 10px 10px;
+                margin: 0px 5px 6px 5px;
+                color: #ffffff;
+
+                .slds-text-title_caps {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .slds-tabs--default__item:after, .slds-tabs_default__item:after{
+        height: 4px
+    }
+}
+
+.freeze-body{
+    overflow: hidden !important;
+    touch-action: none;
+    position:fixed;
+}
+
+@media screen and (max-width: 420px){
+    .contacts-list td:before {
+        font-size: 12px;
+    }
+}
+
+
+body {
+    .task-management_nav {
+        ul {
+            @media screen and (max-width: 550px) {
+                li {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .slds-modal__header {
+        padding: 1rem;
+    }
+
+    #side-bar {
+        height: initial;
+        padding: 0rem;
+        margin: inherit;
+    }
+
+    #top-nav ul li.logout-link a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (min-width: 768px) {
+            padding: 0 0 0 0;
+        }
+
+        .slds-button {
+            color: $white;
+        }
+    } // @media screen and (min-width: 768px) {
+    //     #top-nav ul li.logout-link a {
+    //     }
+    // }
+
+    .slds-button--brand, .slds-button-brand{
+        background-color: $blue;
+    }
+
+    .rotate{
+        svg{
+            transform: rotate(270deg);
+        }
+        
+    }
+}

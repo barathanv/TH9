@@ -1,0 +1,274 @@
+ @media screen and (max-width:550px){
+     .journey-card-step {
+        .slds-media__figure{
+        margin-right: 0px;
+        padding-right: 0px;
+    }  
+         footer{
+          border-top: 0px;
+             padding: .75em 0;
+             .journey-card-step__metrics .slds-col{
+                 background: $herbalife-darkblue;
+                 padding: 5px 10px 10px;
+                 margin: 0px 5px 6px 5px;
+                 color: #ffffff;
+             
+             .slds-text-title_caps{
+                 color: #ffffff;
+             }
+         }
+         }
+}
+}
+
+
+.journey-card-step.step-closed{
+    overflow: hidden;
+    .journey-card__contacts, footer, .journey-card-step_img_mobile{
+        display: none;
+    }
+}
+
+.email-preview-modal{
+     top: 0;
+    left: 0;
+    display: none;
+    position: absolute;
+    z-index: 555555;
+}
+
+.journey-card__contacts, .journey-card__metrics, .journey-card__on-off{
+	@media screen and (max-width: 550px) {
+	display: none;
+}
+}
+
+journey-card__header{
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.journey-card__mobile-footer{
+    @media screen and (min-width: 550px) {
+	display: none;
+}
+}
+
+.journey-card, journey-card-step{
+    border-radius: 3px;
+}
+
+.journey-card__description{
+    width: 100%;
+    @media screen and (min-width:960px){
+        width: 80%;
+    }
+}
+
+
+
+
+.journey-card-step__people{
+    float: right;
+    max-width: 100px;
+    margin-top: -27px;
+   .slds-icon_container {
+        width:29px;
+        height: 29px;
+        padding: .4em;
+        background: $herbalife-darkblue;
+       .slds-icon{
+            width: 1.2rem;
+            height: 1.2rem;
+            line-height: 1;
+       }
+    }
+        @media screen and (min-width: 550px) {
+display: none;
+    }
+}
+
+.journey-card__mobile-footer > div:first-child{
+line-height: 10px;
+}
+
+
+.journey-card-step_img{
+    border-radius: 50%;
+    border:3px solid $casper;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    text-align: center;
+    background: $herbalife-black;
+    cursor: pointer;
+    figure > img {
+        opacity: .5;
+        transition: all .3 ease;
+        display: block;
+        margin-top: -100px;
+    }
+    @media screen and (max-width:550px){
+        display: none;
+    }
+}
+
+
+.journey-card-step_img_mobile{
+   border-radius: 3px;
+    border:3px solid #eeeeee;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    text-align: center;
+    background: $herbalife-black;
+    figure > img {
+        opacity: .5;
+        transition: all .3 ease;
+        display: block;
+        margin-top: -300px;
+    }
+    figure > .preview-hover{
+        padding-top: 25px;
+    }
+    @media screen and (min-width:550px){
+        display: none;
+    }
+
+}
+
+
+.journey-card-step_img:hover img{
+    opacity: .8;
+}
+
+
+.preview-hover{
+    color: #ffffff;
+    display:block;
+    width: 100%;
+    height: 100px;
+    padding: 25% 0;
+    i{
+        color: #ffffff;
+        font-size: 4em;
+        line-height: 1px;
+    }
+}
+
+.step-closed .show-more-div{
+   display: block;
+}
+
+.show-more-div{
+    display: none;
+}
+
+.show-more-div{ 
+    width:100%; 
+    text-align:center; 
+    border-bottom: 1px solid #dddbda; 
+    line-height:0.1em; 
+    margin:20px 0 20px;
+    color: $salesforce-grey;
+    cursor: pointer;
+} 
+
+.show-more-div span { 
+    background:#fff; 
+    padding:0 10px; 
+    font-size: 0.75rem;
+    color: #cccccc;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+}
+
+
+.hrbl-journey-preview {
+    position: relative;
+    z-index: 1000;
+        background-color: rgba(0,0,0,1);
+    @media screen and (max-width:768px){
+        text-align: center;
+        .hrbl-journey-on-off{
+                margin: 0 auto;
+            button:nth-child(2) {
+            margin-top: 5px;
+            margin-left: 0px;
+        }
+        .slds-size--1-of-1:nth-child(2){
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+    }
+}
+}
+
+
+.hrbl-lifestyle-bg {
+    background: url(../imgs/lifestyle/bicycle-min.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: .25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.hrbl-journey-preview-contacts{
+    background-color: rgba(39, 112, 155,.7);
+    @media screen and (max-width:768px){
+    .slds-text-align--right{
+       text-align: center;
+        }
+    }
+}
+
+
+.hrbl-metric-number {
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    display: inline-block;
+   color: $white;
+}
+
+.hrbl-metric{
+    color: $white;
+    text-align: center;
+    padding: 0.5rem 0;
+    label{
+        display: block;
+        padding-top: 0.5rem;
+    }
+}
+
+
+.hrbl-journey-preview{
+    .slds-checkbox_toggle .slds-checkbox_faux, .slds-checkbox_toggle .slds-checkbox--faux, .slds-checkbox--toggle .slds-checkbox_faux, .slds-checkbox--toggle .slds-checkbox--faux{
+            width: 4rem;
+            height: 2rem;
+
+    }
+
+    .slds-checkbox_toggle [type="checkbox"]:checked + .slds-checkbox_faux:before, .slds-checkbox_toggle [type="checkbox"]:checked + .slds-checkbox--faux:before, .slds-checkbox_toggle [type="checkbox"]:checked ~ .slds-checkbox_faux:before, .slds-checkbox_toggle [type="checkbox"]:checked ~ .slds-checkbox--faux:before, .slds-checkbox_toggle [type="checkbox"]:checked + .slds-checkbox_faux_container .slds-checkbox_faux:before, .slds-checkbox_toggle [type="checkbox"]:checked + .slds-checkbox--faux_container .slds-checkbox--faux:before, .slds-checkbox--toggle [type="checkbox"]:checked + .slds-checkbox_faux:before, .slds-checkbox--toggle [type="checkbox"]:checked + .slds-checkbox--faux:before, .slds-checkbox--toggle [type="checkbox"]:checked ~ .slds-checkbox_faux:before, .slds-checkbox--toggle [type="checkbox"]:checked ~ .slds-checkbox--faux:before, .slds-checkbox--toggle [type="checkbox"]:checked + .slds-checkbox_faux_container .slds-checkbox_faux:before, .slds-checkbox--toggle [type="checkbox"]:checked + .slds-checkbox--faux_container .slds-checkbox--faux:before,   .slds-checkbox_toggle .slds-checkbox_faux:after, .slds-checkbox_toggle .slds-checkbox--faux:after, .slds-checkbox--toggle .slds-checkbox_faux:after, .slds-checkbox--toggle .slds-checkbox--faux:after{
+        top: 2px;
+        right: 2px;
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+    
+    .slds-checkbox_toggle [type="checkbox"]:checked + .slds-checkbox_faux:after, .slds-checkbox_toggle [type="checkbox"]:checked + .slds-checkbox--faux:after, .slds-checkbox_toggle [type="checkbox"]:checked ~ .slds-checkbox_faux:after, .slds-checkbox_toggle [type="checkbox"]:checked ~ .slds-checkbox--faux:after, .slds-checkbox_toggle [type="checkbox"]:checked + .slds-checkbox_faux_container .slds-checkbox_faux:after, .slds-checkbox_toggle [type="checkbox"]:checked + .slds-checkbox--faux_container .slds-checkbox--faux:after, .slds-checkbox--toggle [type="checkbox"]:checked + .slds-checkbox_faux:after, .slds-checkbox--toggle [type="checkbox"]:checked + .slds-checkbox--faux:after, .slds-checkbox--toggle [type="checkbox"]:checked ~ .slds-checkbox_faux:after, .slds-checkbox--toggle [type="checkbox"]:checked ~ .slds-checkbox--faux:after, .slds-checkbox--toggle [type="checkbox"]:checked + .slds-checkbox_faux_container .slds-checkbox_faux:after, .slds-checkbox--toggle [type="checkbox"]:checked + .slds-checkbox--faux_container .slds-checkbox--faux:after, {
+        
+        top: 0rem;
+        left: 0.75rem;
+        height: 1.25rem;
+        width: 0.75rem;
+    
+    }
+}
+
+

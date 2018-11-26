@@ -1,0 +1,33 @@
+<aura:component implements="forceCommunity:themeLayout" access="global">
+    <aura:attribute name="header" type="Aura.Component[]" />
+    <aura:attribute name="nav" type="Aura.Component[]" />
+    <aura:attribute name="footer" type="Aura.Component[]" />
+
+    <aura:attribute name="platform" type="String"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+        <ltng:require styles="{!join(',',
+                        $Resource.SLDS245 + '/styles/salesforce-lightning-design-system.min.css',
+                        $Resource.HL_Resources + '/css/main.css',
+                        $Resource.HL_Resources + '/css/styles.css',
+                        $Resource.HL_Resources + '/css/gs-custom.css'
+                      )}"/>
+	<section class="{!(v.platform == 'mobile' ? '' : ' mobile-browser-main-fluid')}">
+        {!v.header}
+        <!-- <c:HNC_Change_Language  -->
+        
+        <div class="{!'wrapper ' + ((v.platform == 'mobile') ? 'no-top-margin' : '')}"  style="height:10px">
+            {!v.nav}
+            <div id="dashboard" class="main-fluid">
+                <div>
+                    {!v.body}
+                </div>
+            </div>
+            <aura:if isTrue="{!v.platform != 'mobile'}">
+                <div>
+                    {!v.footer}
+                </div>
+            </aura:if>
+        </div>          
+    </section> 
+</aura:component>

@@ -1,0 +1,244 @@
+body {
+    height: initial!important
+}
+
+body.loading .cHNC_Spinner {
+    display: flex
+}
+
+.wrapper {
+    margin-top: 40px;
+    display: table;
+    height: initial;
+    table-layout: fixed;
+    width: 100%
+}
+
+.wrapper.no-top-margin {
+    margin-top: 0
+}
+
+@media (min-width:1040px) {
+    .wrapper {
+        width: calc(100% - 48px);
+        margin-left: 48px;
+        margin-top: 50px
+    }
+}
+
+@media (min-width:1560px) {
+    .wrapper {
+        width: calc(100% - 240px);
+        margin-left: 240px
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .slds-modal__footer .slds-button+.slds-button {
+        margin-left: 0
+    }
+    .slds-modal__footer .slds-button~.slds-button {
+        margin-top: .5rem
+    }
+}
+
+.modal-container.slds-modal__container {
+    z-index: 3
+}
+
+.wrapper.clean {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px
+}
+
+.uiContainerManager.siteforcePanelsContainer {
+    display: none
+}
+
+.btn-hero,
+.btn-hero-2,
+.btn-primary {
+    cursor: pointer;
+    outline: 0;
+    font-weight: 700;
+    text-align: center;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    padding: .5em 1.5em;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #0080ff;
+    background-color: #0080ff;
+    border: 0;
+    color: #fff;
+    filter: none
+}
+
+@media (min-width:1560px) {
+    .main-fluid {
+        max-width: 1420px
+    }
+}
+
+@media (min-width:1040px) {
+    .main-fluid {
+        max-width: 1000px
+    }
+}
+
+.main-fluid {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0
+}
+
+.xLargeSize {
+    height: 8rem;
+    width: 8rem
+}
+
+.profilePic {
+    width: 130px;
+    height: 130px
+}
+
+@media screen and (max-width:480px) {
+    .profilePicWrapper {
+        width: 100%
+    }
+    .profilePic {
+        margin-left: 1rem
+    }
+}
+
+.xLargeSize.circular span .image {
+    border: 5px solid #fafaf9;
+    border-radius: 0
+}
+
+.photoDropdown {
+    position: initial;
+    bottom: 9%;
+    right: 4%
+}
+
+.main-fluid a span,
+.main-fluid a:visited span {
+    margin-left: 0
+}
+
+.main-fluid ol,
+.main-fluid ul {
+    margin: 0
+}
+
+.main-fluid figure {
+    margin: 0
+}
+
+.slds-button.slds-button--brand,
+.slds-button.slds-button_brand {
+    color: #fff
+}
+
+.siteforceSpinnerManager.siteforcePanelsContainer {
+    display: none!important
+}
+
+.tooltip-dark {
+    display: none;
+    position: absolute;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 13px;
+    background-color: #2e2e2e;
+    border: 1px solid #2e2e2e;
+    color: #fff;
+    top: -84px;
+    left: 30px;
+    min-width: 200px;
+    z-index: 1001
+}
+
+.tooltip-light {
+    display: none;
+    position: absolute;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 13px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #515151 z-index: 1001
+}
+
+.feature-Disabled {
+	/*  filters dont work in mobile
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: .5
+    */
+    opacity: .5
+}
+
+.feature-Disabled button{
+    color: gray !important;
+}
+
+#hnc-disabled-feature-message,
+.feature-Hidden {
+    display: none
+}
+
+body .forceCommunityToastManager.forceToastManager .forceVisualMessageQueue {
+    top: 7rem
+}
+
+.slds-notify__close,
+.toastClose {
+    width: auto;
+    color: #fff
+}
+
+body .slds-has-overflow .slds-tab__scroll-controls {
+    display: none
+}
+
+body .slds-tabs__nav-scroller.slds-has-overflow {
+    padding-right: 0
+}
+
+.slds-tabs--default .slds-has-overflow .slds-tabs__nav-scroller--inner {
+    overflow-x: scroll
+}
+
+.DESKTOP.uiModal.open.active,
+.PHONE.onePanelManager,
+.PHONE.siteforcePanelManager,
+.PHONE.siteforcePanelsContainer,
+.PHONE.uiModal.open.active,
+.PHONE.uiPanelManager2,
+.TABLET.uiModal.open.active {
+    z-index: 99999!important
+}
+
+.DESKTOP.uiModal.open.active .modal-container.slds-modal__container {
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+body .slds-button.slds-button--neutral.uiButton--brand,
+body .slds-button.slds-button--neutral.uiButton--brand:focus,
+body .slds-button.slds-button--neutral.uiButton--brand:hover {
+    color: #3558d6
+}

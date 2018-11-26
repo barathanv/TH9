@@ -1,0 +1,844 @@
+.THIS .slds-form-element__legend{
+	font-weight: normal;
+}
+.THIS footer {
+    display: block;
+}
+
+.THIS .main-fluid {
+    /*padding: 20px 20px;*/
+    margin: 0px auto;
+}
+
+.THIS + .forceCommunityToastManager.forceToastManager {
+	position: absolute;
+    top: 0;
+}
+
+
+.THIS + .forceCommunityToastManager.forceToastManager .forceVisualMessageQueue {
+    top: auto;
+}
+.THIS + .forceCommunityToastManager.forceToastManager .forceVisualMessageQueue {
+    top: 6rem;
+}
+
+
+.THIS h1,
+.THIS h2,
+.THIS h3,
+.THIS h4,
+.THIS h5,
+.THIS h6 {
+    font-family: "Proxima Nova","Arial",sans-serif !important;
+}
+
+@media only screen and (min-width: 1560px){
+	.THIS + .forceCommunityToastManager.forceToastManager .forceVisualMessageQueue {
+    	left: 240px;
+	}
+
+}
+@media only screen and (min-width: 1040px) {
+    .THIS + .forceCommunityToastManager.forceToastManager .forceVisualMessageQueue .slds-notify--toast{
+    width: calc(100% - 48px);
+    margin-left: 48px;
+}
+
+}
+@media only screen and (max-width: 767px) {
+    .THIS .forceCommunityEmbeddedServiceHelpButton,
+    .THIS.mobile-browser-main-fluid .forceCommunityEmbeddedServiceHelpButton{
+        z-index: 5;
+    }
+
+    .THIS.mobile-browser-main-fluid .forceCommunityEmbeddedServiceHelpButton .flatButton {
+        bottom: 60px;
+    }
+
+    .THIS.mobile-browser-main-fluid .embeddedServiceSidebar.sidebarMaximized {
+        top: 40px;
+        height: calc(100% - 56px - 40px);
+        /* 56px for height of bottom nav */
+        /* 40px for height of top nav */
+    }
+
+    .THIS .forceCommunityEmbeddedServiceHelpButton .message {
+        line-height: 25px;
+    }
+
+    .THIS .forceCommunityEmbeddedServiceHelpButton .flatButton {
+        align-items: center;
+    }
+    .THIS + .forceCommunityToastManager.forceToastManager .forceVisualMessageQueue {
+        top: 2rem;
+    }
+    
+}
+
+.THIS #top-nav:empty {
+    display: none;
+}
+
+.THIS .slds-button {
+    /* position: relative; */
+    display: inline-block;
+    padding: 0;
+    background: transparent;
+    background-clip: border-box;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    line-height: 1.875rem;
+    text-decoration: none;
+    color: #0080ff;
+    -webkit-appearance: none;
+    white-space: normal;
+    user-select: none;
+    font-weight: bold;
+}
+
+.THIS .slds-button:hover,
+.THIS .slds-button:focus,.THIS .slds-button:active,.THIS .slds-button:visited {
+    text-decoration: none;
+}
+
+.THIS .slds-button:hover,.THIS .slds-button:focus {
+    color: #005fb2;
+}
+
+.THIS .slds-button:focus {
+    outline: 0;
+    box-shadow: 0 0 3px #0080ff;
+}
+
+.THIS .slds-button:active {
+    color: #005fb2;
+}
+
+.THIS .slds-button[disabled] {
+    color: #d7d7d7;
+}
+
+.THIS .slds-button[disabled] * {
+    pointer-events: none;
+}
+
+.THIS .slds-button a {
+    color: currentColor
+}
+
+.THIS .slds-button:hover .slds-button__icon,
+.THIS .slds-button:focus .slds-button__icon,
+.THIS .slds-button:active .slds-button__icon,
+.THIS .slds-button[disabled] .slds-button__icon {
+    fill: currentColor;
+    pointer-events: none
+}
+
+.THIS .slds-button+.slds-button-group,
+.THIS .slds-button+.slds-button-group-list {
+    margin-left: .25rem
+}
+
+.THIS .slds-button+.slds-button {
+    margin-left: .25rem
+}
+
+.THIS a.slds-button {
+    text-align: center
+}
+
+.THIS a.slds-button:focus {
+    outline: 0;
+    box-shadow: 0 0 3px #0080ff
+}
+
+.THIS a.slds-button--inverse:focus {
+    outline: none;
+    box-shadow: 0 0 3px #ecebea;
+}
+
+.THIS .slds-button_reset,
+.THIS .slds-button--reset {
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    text-align: inherit;
+}
+
+.THIS .slds-button_neutral,
+.THIS .slds-button--neutral {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #d7d7d7;
+    background-color: #d7d7d7;
+    border: 0;
+    color: #515151;
+    border: 1px solid #d7d7d7;
+}
+
+.THIS .slds-button_neutral:hover,
+.THIS .THIS .slds-button_neutral:focus,
+.THIS .slds-button--neutral:hover,
+.THIS .slds-button--neutral:focus {
+    background-color: #f4f6f9;
+}
+
+.THIS .slds-button_neutral:active,
+.THIS .slds-button--neutral:active {
+    background-color: #eef1f6;
+}
+
+.THIS .slds-button_neutral[disabled],
+.THIS .slds-button_neutral.disabled,
+.THIS .slds-button--neutral[disabled],
+.THIS .slds-button--neutral.disabled{
+    color: #d7d7d7;
+    background-color: #fff;
+}
+
+.THIS .slds-button_brand,
+.THIS .slds-button--brand {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #0080ff;
+    transition: border 0.15s linear;
+    background-color: #0080ff;
+    border-color: #0080ff;
+    color: #fff;
+}
+
+.THIS .slds-button_brand:link,
+.THIS .slds-button_brand:visited,
+.THIS .slds-button_brand:active,
+.THIS .slds-button--brand:link,
+.THIS .slds-button--brand:visited,
+.THIS .slds-button--brand:active {
+    color: #fff;
+    border-color: #005fb2;
+}
+
+
+.THIS .slds-button_brand:hover,
+.THIS .slds-button_brand:focus,
+.THIS .slds-button--brand:hover,
+.THIS .slds-button--brand:focus {
+    color: #fff;
+}
+
+.THIS .slds-button_brand:hover,
+.THIS .slds-button--brand:hover{
+    background-color: #0073e6;
+}
+
+.THIS .slds-button_brand:focus,
+.THIS .slds-button--brand:focus {
+    background-color: #005fb2;
+}
+
+.THIS .slds-button_brand:active,
+.THIS .slds-button--brand:active {
+    background-color: #006cd6;
+    
+}
+
+.THIS .slds-button_brand[disabled],
+.THIS .slds-button--brand[disabled] {
+    background: #c9c7c5;
+    border-color: #c9c7c5;
+    color: #fff;
+}
+
+.THIS .slds-button_outline-brand {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #0080ff;
+    transition: border 0.15s linear;
+    border-color: #0080ff;
+    background-color: #fff;
+    border-color: #0080ff;
+}
+
+.THIS .slds-button_outline-brand:hover,
+.THIS .slds-button_outline-brand:focus {
+    background-color: #f2f2f2;
+}
+
+.THIS .slds-button_outline-brand:active {
+    background-color: #ebebeb;
+}
+
+.THIS .slds-button_outline-brand[disabled],
+.THIS .slds-button_outline-brand.disabled {
+    background: #ffffff;
+    border-color: #d7d7d7;
+    color: #ccc;
+}
+
+.THIS .slds-button_inverse,
+.THIS .slds-button--inverse {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #d7d7d7;
+    transition: border 0.15s linear;
+    background-color: transparent;
+    border-color: #d7d7d7;
+}
+
+.THIS .slds-button_inverse[disabled],
+.THIS .slds-button--inverse[disabled] {
+    background-color: transparent;
+    border-color: rgba(255,255,255,0.15);
+}
+
+.THIS .slds-button_inverse,
+.THIS .slds-button_inverse:link,
+.THIS .slds-button_inverse:visited,
+.THIS .slds-button--inverse,
+.THIS .slds-button--inverse:link,
+.THIS .slds-button--inverse:visited,
+.THIS .slds-button_icon-border-inverse,
+.THIS .slds-button_icon-border-inverse:link,
+.THIS .slds-button_icon-border-inverse:visited,
+.THIS .slds-button--icon-border-inverse,
+.THIS .slds-button--icon-border-inverse:link,
+.THIS .slds-button--icon-border-inverse:visited {
+    color: #ecebea;
+}
+
+.THIS .slds-button_inverse:hover,
+.THIS .slds-button_inverse:focus,
+.THIS .slds-button_inverse:active,
+.THIS .slds-button--inverse:hover,
+.THIS .slds-button--inverse:focus,
+.THIS .slds-button--inverse:active,
+.THIS .slds-button_icon-border-inverse:hover,
+.THIS .slds-button_icon-border-inverse:focus,
+.THIS .slds-button_icon-border-inverse:active,
+.THIS .slds-button--icon-border-inverse:hover,
+.THIS .slds-button--icon-border-inverse:focus,
+.THIS .slds-button--icon-border-inverse:active {
+    color: #0080ff;
+}
+
+.THIS .slds-button_inverse:focus,
+.THIS .slds-button--inverse:focus,
+.THIS .slds-button_icon-border-inverse:focus,
+.THIS .slds-button--icon-border-inverse:focus {
+    outline: none;
+    box-shadow: 0 0 3px #ecebea;
+}
+
+.THIS .slds-button_inverse[disabled],
+.THIS .slds-button--inverse[disabled],
+.THIS .slds-button_icon-border-inverse[disabled],
+.THIS .slds-button--icon-border-inverse[disabled] {
+    color: rgba(255, 255, 255, 0.15);
+}
+
+.THIS .slds-button_destructive,
+.THIS .slds-button--destructive {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #d7d7d7;
+    transition: border 0.15s linear;
+    background-color: #ff0000;
+    border-color: #ff0000;
+    color: #fff;
+}
+
+.THIS .slds-button_destructive:link,
+.THIS .slds-button_destructive:visited,
+.THIS .slds-button_destructive:active,
+.THIS .slds-button--destructive:link,
+.THIS .slds-button--destructive:visited,
+.THIS .slds-button--destructive:active {
+    color: #fff;
+}
+
+.THIS .slds-button_destructive:hover,
+.THIS .slds-button_destructive:focus,
+.THIS .slds-button--destructive:hover,
+.THIS .slds-button--destructive:focus {
+    background-color: #a61a14;
+    color: #fff;
+}
+
+.THIS .slds-button_destructive:active,
+.THIS .slds-button--destructive:active {
+    background-color: #870500;
+    border-color: #870500;
+}
+
+.THIS .slds-button_destructive[disabled],
+.THIS .slds-button--destructive[disabled] {
+    background: #e0e5ee;
+    border-color: transparent;
+    color: #fff;
+}
+
+.THIS .slds-button_success,
+.THIS .slds-button--success {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #d7d7d7;
+    transition: border 0.15s linear;
+    background-color: #4bca81;
+    border-color: #4bca81;
+    color: #3e3e3c;
+}
+
+.THIS .slds-button_success:link,
+.THIS .slds-button_success:visited,
+.THIS .slds-button_success:active,
+.THIS .slds-button--success:link,
+.THIS .slds-button--success:visited,
+.THIS .slds-button--success:active {
+    color: #3e3e3c;
+}
+
+.THIS .slds-button_success:hover,
+.THIS .slds-button_success:focus,
+.THIS .slds-button--success:hover,
+.THIS .slds-button--success:focus {
+    background-color: #7ac143;
+    border-color: #7ac143;
+    color: #fff;
+}
+
+.THIS .slds-button_success:active,
+.THIS .slds-button--success:active {
+    background-color: #7ac143;
+    border-color: #7ac143;
+}
+
+.THIS .slds-button_small,
+.THIS .slds-button--small {
+    line-height: 1.75rem;
+    min-height: 2rem;
+}
+
+.THIS .slds-button_hint,
+.THIS .slds-button--hint {
+    color: #b0adab;
+}
+
+.THIS .slds-button_hint:hover,
+.THIS .slds-button_hint:focus,
+.THIS .slds-button_hint:active,
+.THIS .slds-button--hint:hover,
+.THIS .slds-button--hint:focus,
+.THIS .slds-button--hint:active {
+    color: #0080ff;
+}
+
+.THIS .slds-hint-parent:hover .slds-button--hint,
+.THIS .slds-hint-parent:focus .slds-button--hint {
+    color: #0080ff;
+}
+
+.THIS .slds-button__icon {
+    width: .875rem;
+    height: .875rem;
+    fill: currentColor;
+}
+
+.THIS .slds-button__icon_large,
+.THIS .slds-button__icon--large {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.THIS .slds-button__icon_small,
+.THIS .slds-button__icon--small {
+    width: .75rem;
+    height: .75rem;
+}
+
+.THIS .slds-button__icon_x-small,
+.THIS .slds-button__icon--x-small {
+    width: .5rem;
+    height: .5rem;
+}
+
+.THIS .slds-button__icon_left,
+.THIS .slds-button__icon--left {
+    margin-right: .5rem;
+}
+
+.THIS .slds-button__icon_right,
+.THIS .slds-button__icon--right {
+    margin-left: .5rem;
+}
+
+.THIS .slds-button_neutral.slds-is-selected,
+.THIS .slds-button--neutral.slds-is-selected {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.THIS .slds-button_neutral.slds-is-selected:hover:not([disabled]),
+.THIS .slds-button_neutral.slds-is-selected:focus:not([disabled]),
+.THIS .slds-button--neutral.slds-is-selected:hover:not([disabled]),
+.THIS .slds-button--neutral.slds-is-selected:focus:not([disabled]) {
+    border-color: #d7d7d7;
+    background-color: #f4f6f9;
+}
+
+.THIS .slds-button_neutral.slds-is-selected:active:not([disabled]),
+.THIS .slds-button--neutral.slds-is-selected:active:not([disabled]) {
+    background-color: #eef1f6;
+}
+
+.THIS .slds-button__icon_stateful,
+.THIS .slds-button__icon--stateful {
+    width: .75rem;
+    height: .75rem;
+    fill: currentColor
+}
+
+.THIS .slds-button_inverse.slds-is-selected,
+.THIS .slds-button--inverse.slds-is-selected {
+    border-color: transparent
+}
+
+.THIS .btn-small,
+.THIS .hrbl-btn--small {
+    height: 1.35rem;
+    line-height: 1.35rem;
+    font-size: 12px;
+}
+
+.THIS .slds-button.hrbl-button_full {
+    width: 100%;
+    padding: 8px 0;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+    margin: 4px 0;
+    height: calc(1.875rem + (4px * 2));
+}
+.THIS .slds-button.hrbl-button_large {
+    padding: 9px 20px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+@media only screen and (min-width: 1040px){
+    .THIS #import-contacts.hrbl-standard-page-container {
+        width: 940px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .THIS #import-contacts .hrbl-inner-container {
+        padding: 20px 40px;
+    }
+}
+
+@media only screen and (min-width: 660px){
+    .THIS h2 {
+        font-size: 36px;
+    }
+    .THIS .hrbl-standard-page-container {
+        padding: 40px;
+    }
+
+    .THIS #import-contacts #hrbl-import-source-selector {
+        flex-wrap: nowrap;
+    }
+
+    .THIS #import-contacts #hrbl-import-source-selector h5 {
+        flex: 0 0 25%;
+    }
+
+    .THIS #import-contacts #hrbl-import-source-selector ul {
+        flex: 0 1 75%;
+    }
+
+    .THIS #import-contacts #hrbl-import-source-selector ul li a {
+        padding: .5rem;
+    }
+
+    .THIS #import-contacts #hrbl-import-source-selector ul li img {
+        height: 80px;
+        margin-bottom: 1rem;
+    }
+
+    .THIS #import-contacts #hrbl-import-source-selector ul li h6 {
+        display: block;
+    }
+
+    .THIS #import-contacts #hrbl-selected-import-source {
+        padding: 0.5rem 40px;
+    }
+
+    .THIS #import-contacts #hrbl-selected-import-source .hrbl-import-source__toggle {
+        padding: 1rem;
+    }
+
+    .THIS #import-contacts #hrbl-selected-import-source .slds-card .slds-card__body .hrbl-import-count .hrbl-checkbox,
+    .THIS #import-contacts #hrbl-selected-import-source .slds-card .slds-card__body.hrbl-import-count .hrbl-checkbox {
+        border: 0;
+        margin-bottom: 0;
+    }
+
+    .THIS #import-contacts #hrbl-selected-import-source .slds-card .slds-card__body .hrbl-import-count label,
+    .THIS #import-contacts #hrbl-selected-import-source .slds-card .slds-card__body.hrbl-import-count label {
+        margin-left: .25rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+}
+
+.THIS .hrbl-inner-container {
+    padding: 20px 20px 10px 20px;
+}
+
+.THIS .hrbl-standard-page-container {
+    padding: 10px;
+    width: 100%;
+    padding-top: 10px !important;
+    position: relative;
+    /*z-index: 1;*/
+}
+
+.THIS #hrbl-import-source-selector {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.THIS #hrbl-import-source-selector ul {
+    display: flex;
+    flex: 0 1 100%;
+    margin: 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
+}
+
+.THIS #hrbl-import-source-selector ul li:first-child {
+    border-left: 1px solid #d7d7d7;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.THIS #hrbl-import-source-selector ul li {
+    position: relative;
+    display: flex;
+    flex: 0 0 33.3333%;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    line-height: 20px;
+}
+
+.THIS #hrbl-import-source-selector ul li:first-child a {
+    border-left: 10px solid #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.THIS #hrbl-import-source-selector ul li a {
+    width: 100%;
+    height: 100%;
+    padding: .5rem .25rem;
+    border: 10px solid #fff;
+    transition: border .4s ease;
+}
+
+.THIS #hrbl-import-source-selector ul li img {
+    max-width: 100%;
+    height: 55px;
+}
+
+.THIS #hrbl-import-source-selector ul li h6 {
+    display: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #999;
+    font-size: .8125rem;
+}
+
+.THIS #hrbl-selected-import-source {
+    display: block;
+    margin: 1rem auto;
+    padding: .5rem 0 1.5rem;
+}
+
+.THIS #hrbl-selected-import-source .hrbl-import-source__toggle {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.THIS #hrbl-selected-import-source .hrbl-import-source__login .slds-card {
+    text-align: center;
+}
+
+.THIS #hrbl-selected-import-source .slds-card .slds-card__body .hrbl-import-count,
+.THIS #hrbl-selected-import-source .slds-card .slds-card__body.hrbl-import-count {
+    flex-wrap: wrap;
+}
+
+.THIS #hrbl-selected-import-source .slds-card .slds-card__body.slds-grid,
+.THIS #hrbl-selected-import-source .slds-card .slds-card__body table+.slds-grid,
+.THIS #hrbl-selected-import-source .hrbl-import-source__groups .hrbl-import-count {
+    padding: 1rem;
+    border-top: 2px solid #d7d7d7;
+}
+
+.THIS #hrbl-selected-import-source .pagination{
+    padding: 1rem;
+}
+
+.THIS #hrbl-selected-import-source .slds-card .slds-card__header {
+    text-align: center;
+}
+
+.THIS #hrbl-selected-import-source .slds-card .slds-card__body .hrbl-import-count .hrbl-checkbox, 
+.THIS #hrbl-selected-import-source .slds-card .slds-card__body.hrbl-import-count .hrbl-checkbox {
+    margin-bottom: .125rem;
+}
+
+.THIS #hrbl-selected-import-source .slds-table thead th {
+    background-color: #fafaf9;
+    color: #514f4d;
+    padding: 0.25rem 0.5rem;
+    line-height: 1.15rem;
+
+    border-top: 1px solid #dddbda;
+    border-bottom: 1px solid #dddbda;
+
+    font-size: .75rem;
+    color: #706e6b;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+}
+
+.THIS #hrbl-selected-import-source .slds-table th {
+    font-weight: 400;
+}
+
+.THIS #hrbl-selected-import-source .slds-table tbody td {
+    margin-left: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    color: #4d4d4d;
+    font-size: .8125rem;
+}
+
+.THIS #hrbl-selected-import-source .slds-table th, .THIS #hrbl-selected-import-source .slds-table td {
+    padding: 0.25rem 0.5rem;
+    white-space: nowrap;
+    position: relative;
+}
+
+.THIS #hrbl-selected-import-source .slds-card .slds-card__body table tr>td:first-child {
+    padding-left: 1rem;
+}
+
+.THIS #hrbl-selected-import-source #mailChimp-lists th:nth-child(3) {
+    text-align: center;
+}
+
+.THIS #hrbl-selected-import-source .slds-box.contacts-table {
+    padding: 0;
+    border-radius: 0;
+    border: 0;
+}
+
+.THIS #hrbl-selected-import-source .cLightningTable.fields-selection{
+    border-top: 1px solid #dddbda;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.THIS #hrbl-selected-import-source .text-center{
+    width: 12rem;
+}
+
+.THIS #hrbl-selected-import-source .text-center *{
+    text-align: center;
+}
+
+.THIS h1, .THIS h2, .THIS h3, .THIS h4, .THIS h5, .THIS h6, .THIS .h1, .THIS .h2, .THIS .h3, .THIS .h4, .THIS .h5, .THIS .h6 {
+    font-weight: bold;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+.THIS h2, .THIS .h2 {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin: 0.5rem 0 0.25rem 0;
+    padding: 0.5rem 0 0 0;
+}
+
+.THIS h3, .THIS .h3 {
+    font-size: 1.25rem;
+    line-height: 1;
+    margin: 0.5rem 0 0.25rem 0;
+    padding: 0.5rem 0 0 0;
+}
+
+.THIS #hrbl-selected-import-source .hrbl-import-source__toggle {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.THIS .hrbl-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.THIS .hrbl-checkbox input[type="checkbox"]+label {
+    margin-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 26px;
+    display: block;
+    text-indent: -15px;
+}
+
+.THIS .hrbl-checkbox input[type="checkbox"]+label:before {
+    content: "\e1d2";
+    color: #999;
+    letter-spacing: 10px;
+    
+    font-family: "myherbalife";
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.THIS .hrbl-checkbox input[type="checkbox"]:checked+label:before {
+    content: "\e5b3";
+    color: #0080ff;
+}

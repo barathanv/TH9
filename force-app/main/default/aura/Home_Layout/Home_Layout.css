@@ -1,0 +1,17 @@
+.THIS [data-region-name="beta"] {
+	border-right: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 8px 0px 10px -8px rgba(0,0,0,0.15);
+    background: #fff;
+}
+
+.THIS #side-bar {
+	background-color: #f3f3f3;
+	border: none;
+    margin-left: 4px;
+} 
+
+@media (min-width: 64em){
+	.THIS #side-bar{
+		width: 32%;
+	}
+}

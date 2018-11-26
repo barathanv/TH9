@@ -1,0 +1,413 @@
+
+
+
+#create-new-contact { 
+    height: 32px;
+    order: 1;
+    @media screen and (min-width: 550px) {
+        order: 2;
+    }
+    @media screen and (max-width: 550px) {
+        display: block;
+        width: 100%;
+        height: 80px;
+        button:nth-child(2){
+            margin-top: 5px;
+            margin-left: 0px;
+        }
+    }
+}
+
+
+.SearchContactsDIV{
+	background: #ffffff;
+	position: relative;
+    width: 100%;
+    border: solid 1px rgba(0, 0, 0, 0.09);
+}
+
+.slds-has-input-focus{
+	border-color: transparent !important;
+	background-color: white;
+	box-shadow: 0 0 3px #ffffff;	
+}
+
+@media screen and (min-width:768px){
+	.subnav__with-filter--icons .subnav__with-filter--icons--inner{
+		 width: 75px;
+		padding: 1em;
+	}
+}
+
+.subnav__with-filter--icons .subnav__with-filter--icons--inner{
+	text-align: center;
+	 width: 50px;
+		padding: 1em .5em;
+	@media screen and (min-width:768px){
+		 width: 75px;
+	}
+}
+
+.subnav__text .slds-combobox_container{
+    border: 0px;
+}
+
+.is-filter{
+	    border-left: solid 1px rgba(0, 0, 0, 0.09);
+}
+
+.search-nonactive{
+	    border-bottom: solid 1px rgba(0, 0, 0, 0.09);
+}
+
+.filter-active{
+	    border-bottom: solid 1px rgba(255, 255, 255, 1);
+}
+
+
+.search-contact-field::placeholder{
+	font-size: 1.2em;
+	
+}
+
+
+.SearchContactsDIV .slds-combobox_container{
+    width:100%;
+}
+
+.SearchContactsDIV input{
+    border: 0px;
+	padding: 10px;
+	height: 57px;
+}
+
+.contact-filter{
+    padding-top: 10px;
+}
+
+.show-advanced-filters{ 
+    width:100%; 
+    text-align:left; 
+    border-bottom: 1px solid #dddbda; 
+    line-height:0.1em; 
+    margin:10px 0 20px;
+    color: $salesforce-grey;
+    cursor: pointer;
+} 
+
+.show-advanced-filters span { 
+    background:#fff; 
+    padding:0 10px 0 0;
+    font-size: 0.75rem;
+    color: #cccccc;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+}
+
+ .contact-advanced-filter .slds-button_last{
+        min-width: 30px;
+    }
+
+
+
+.contact-filters footer{
+    text-align: right;
+    a:first-child{
+        border-right: 1px solid #dddbda;
+        margin-right: .75rem;
+    }
+    @media screen and (max-width:550px){
+        text-align: center;
+        padding-top: 0px;
+        button{
+           margin-top: 10px;
+        }
+    }
+}
+
+
+.contact-list-checkbox .slds-checkbox .slds-checkbox_faux, .contact-list .slds-checkbox .slds-checkbox--faux, .contact-list .slds-checkbox .slds-checkbox_faux, .contact-filter .slds-checkbox .slds-checkbox_faux, .contact-filter .slds-checkbox .slds-checkbox--faux{
+width: 1.4rem;
+height: 1.4rem;
+display: inline-block;
+position: relative;
+vertical-align: middle;
+border: 1px solid #dddbda;
+border-radius: 0.125rem;
+background: white;
+margin-right: .5rem;
+transition: border 0.1s linear, background-color 0.1s linear;   
+}
+
+.slds-checkbox [type="checkbox"]:checked + .slds-checkbox_faux:after, .slds-checkbox [type="checkbox"]:checked + .slds-checkbox--faux:after, .slds-checkbox [type="checkbox"]:checked ~ .slds-checkbox_faux:after, .slds-checkbox [type="checkbox"]:checked ~ .slds-checkbox--faux:after, .slds-checkbox [type="checkbox"]:checked + .slds-checkbox__label .slds-checkbox_faux:after, .slds-checkbox [type="checkbox"]:checked + .slds-checkbox__label .slds-checkbox--faux:after{
+    display: block;
+    content: '';
+    height: 0.5rem;
+    width: 1rem;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+    border-bottom: 4px solid $science-blue;
+    border-left: 4px solid $science-blue;
+}
+
+
+
+/******************table******************/
+
+.contacts-table{
+    background: #ffffff;
+}
+
+.contacts-table .slds-table{
+    background: transparent;
+}
+
+.contact-actions{
+	@media screen and (max-width: 960px) {
+		margin: 10px auto 0;
+	}
+}
+
+.table-column-name{
+    display: none;
+}
+
+.contact-list .con-name i:before{
+    line-height: 2;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    
+.contacts-list td:first-child, .contacts-list thead th:first-child{ 
+    text-align: left;
+}
+    
+.contacts-list td {
+    text-align: center;
+}
+    .contact-actions{
+        float: right;
+    }
+}
+
+.contact-list-checkbox{ 
+    padding-top:.3em;
+}
+
+.contact-advanced-filter button.slds-is-selected, .contact-advanced-filter button:hover, .contact-advanced-filter .slds-button_neutral.slds-is-selected:hover:not([disabled]){
+   background: $herbalife-green; 
+    color: #ffffff;
+    border: 1px solid #dddbda;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .contacts-table{
+        padding:0px;
+        border: 0px;
+        background: transparent;
+    }
+    
+    .contacts-list thead{
+        display: none;
+    }
+    
+    .contacts-list tr {
+        border-radius: 2px;
+        overflow: hidden;
+    display: block;
+    border-bottom: 1px solid #dddbda !important;
+    border-left: 1px solid #dddbda !important;
+    border-right: 1px solid #dddbda !important;
+    border-top: 1px solid #dddbda !important;
+    margin-bottom: 10px;
+    background: $white;
+    }
+    
+    .contact-list tr:nth-child(even){
+          background: $white;
+        td:first-child{
+            background: $white;
+        }
+    }    
+    
+    .contact-table-name{
+    padding: 12px 0;
+}
+    .contact-table-icon-type{
+        padding-top: 9px;
+    }
+    
+    
+    .con-name svg{
+        color: $anchor-navy;
+        fill: $anchor-navy;
+    }
+    
+
+    .contacts-list td:first-child, .contacts-list th {
+    text-align: left;
+    font-weight: bold;
+    color: $anchor-navy;
+        display: block;
+        flex: auto;
+        border-bottom: 0px;
+        .slds-icon{
+           fill: $dimgrey;
+        }
+    }
+    
+    
+    .contacts-list td:first-child {
+		width: 10%;
+		display: inline-block;
+		min-width: 38px;
+    }
+     .contacts-list th {
+		width: 85%;
+		display: inline-block;
+    }
+    
+    .contacts-list td {
+    display: block;
+    background: $white;
+    width: 100%;
+    border-bottom: 1px solid #d7d7d7;
+    text-align: right;
+}
+    
+    .hidden-table-col-mobile{
+       display: none !important;
+    }
+    
+    .contacts-list td:before {
+    content: attr(data-label);
+    float: left;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19.5px;
+    max-width: 150px;
+}
+    
+    
+    .slds-table:not(.slds-no-row-hover) tbody tr:hover > td:first-child,
+.slds-table:not(.slds-no-row-hover) tbody tr:hover > th,
+.slds-table:not(.slds-no-row-hover) tbody tr:focus > td:first-child,
+.slds-table:not(.slds-no-row-hover) tbody tr:focus > th {
+  background-color:$lightgreen; }
+
+.slds-table tbody tr.slds-is-selected > td:first-child,
+.slds-table tbody tr.slds-is-selected > th,
+.slds-table:not(.slds-no-row-hover) tr.slds-is-selected:hover > td:first-child,
+.slds-table:not(.slds-no-row-hover) tr.slds-is-selected:hover > th {
+  background-color: $lightgreen; 
+    }
+    
+    
+}
+
+tr.slds-is-selected, .contacts-list tr:hover {
+  background-color:$lightgreen;
+}
+
+@media screen and (min-width:768px){
+ .slds-table:not(.slds-no-row-hover) tbody tr:hover > td:first-child,
+.slds-table:not(.slds-no-row-hover) tbody tr:hover > th,
+.slds-table:not(.slds-no-row-hover) tbody tr:focus > td:first-child,
+.slds-table:not(.slds-no-row-hover) tbody tr:focus > th {
+  background-color: #fafaf9; }
+
+.slds-table tbody tr.slds-is-selected > td:first-child,
+.slds-table tbody tr.slds-is-selected > th,
+.slds-table:not(.slds-no-row-hover) tr.slds-is-selected:hover > td:first-child,
+.slds-table:not(.slds-no-row-hover) tr.slds-is-selected:hover > th {
+  background-color: #fafaf9; 
+    }
+    
+    tr.contact-selected {
+  background-color:$lightgreen; 
+    }
+    
+    .contact-lists th .slds-checkbox, .contact-lists td .slds-checkbox{
+        padding-left: 10px;
+    }
+    
+}
+
+
+
+.xLargeSize {
+    height: 8rem;
+    width: 8rem;
+}
+
+.profilePic {
+    width: 130px;
+    height: 130px;
+   
+}
+
+@media screen and (max-width: 480px) {
+     .profilePicWrapper{
+         width: 100%;
+     }
+    .profilePic {
+        margin-left: 1rem;
+    }
+}
+
+
+
+.xLargeSize.circular span .image {
+    border: 5px solid rgb(250, 250, 249);
+    border-radius: 50%;
+}
+
+
+.photoDropdown {
+    position: absolute;
+    bottom: 9%;
+    right: 4%;
+    @media screen and (max-width:768px){
+        left: 120px;
+    }
+    .photoIcon {
+    width: 21px;
+    height: 21px;
+    padding: 3.5px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: .125rem;
+    color: rgb(74, 74, 74);
+    fill: rgb(74, 74, 74);
+    line-height: 0;
+        svg{
+            color: rgb(74, 74, 74);
+    fill: rgb(74, 74, 74);
+        }
+}
+}
+
+.rotate{
+    svg{
+        transform: rotate(90deg);
+    }
+    
+}
+
+.contact-detail-section{
+    background: #ffffff;
+    padding: 10px;
+    border: 1px solid #dddbda;
+    border-radius: 2px;
+}
+
+.checkbox-group fieldset{
+        border: 0px;
+    padding: 0px;
+}

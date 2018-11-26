@@ -1,0 +1,55 @@
+.create-new-modal{
+    .slds-form-element{
+        text-align: left;
+    }
+
+}
+
+.slds-datepicker{
+   display: none;
+}
+
+@media screen and (max-width:550px){
+    .slds-modal__footer .slds-button + .slds-button{
+        margin-left: 0rem;
+        margin-top: .5rem
+}
+}
+
+.slds-input-has-icon .slds-input__icon{
+    top: 37%;
+}
+
+.create-new-modal .list-selection{
+    background: $lightgrey;
+}
+
+.assign-task .slds-table td, .assign-task .slds-table th{
+    border-top: 0px;
+}
+
+@media screen and (max-width:768px){
+    .assign-task .slds-table {
+        display: table;
+    }
+.assign-task .slds-table td, .assign-task .slds-table th{
+    border-bottom: 0px;
+    display: table-cell;
+    width: auto;
+}
+    
+     .assign-task .slds-table th{
+    float: left;
+    height: 69px;
+    vertical-align: middle;
+         padding-top:21px;
+}
+    .assign-task .slds-table td{
+    float: right; 
+}
+    
+}
+
+#modal-content-contact-list-hide{
+   display: none; 
+}

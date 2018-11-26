@@ -1,0 +1,44 @@
+.metric-cirlce{
+	border-radius: 50%;
+	width: 173px;
+	height: 173px;
+	padding-top: 2.7em;
+	margin: 0 auto 1.5em;
+	box-shadow: 0px 0px 0px 3px rgba(100,100,100,.1);
+	border:1px solid #dddbda;
+}
+
+    
+.slds-table td:before {
+    content: attr(data-label);
+    float: left;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19.5px;
+    max-width: 150px;
+    @media screen and (min-width:768px){
+        display: none;
+    }
+}
+   
+#thead-leadsAcceptedListTable th:first-child{
+    padding-left: .6rem;
+    
+}
+    
+    
+.slds-table:not(.slds-no-row-hover) tbody tr:hover > td:first-child,
+.slds-table:not(.slds-no-row-hover) tbody tr:hover > th,
+.slds-table:not(.slds-no-row-hover) tbody tr:focus > td:first-child,
+.slds-table:not(.slds-no-row-hover) tbody tr:focus > th {
+  background-color: $science-blue; }
+
+.slds-table tbody tr.slds-is-selected > td:first-child,
+.slds-table tbody tr.slds-is-selected > th,
+.slds-table:not(.slds-no-row-hover) tr.slds-is-selected:hover > td:first-child,
+.slds-table:not(.slds-no-row-hover) tr.slds-is-selected:hover > th {
+  background-color: $science-blue; 
+    }
+    

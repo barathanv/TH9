@@ -1,0 +1,410 @@
+.task-management_title {
+    color: $herbalife-green;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.task-management_nav, .slds-tabs__nav-scroller {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    ul {
+        order: 2;
+        @media screen and (max-width:550px){
+            padding-top: 1em;
+            li{
+                padding: 0 0.25rem;
+            }
+        }
+        li a .slds-text-heading_medium {
+            font-size: 18px;
+             @media screen and (max-width:550px){
+                 font-size: 16px;
+            }
+        }
+    }
+    .slds-badge {
+        display: none;
+        vertical-align: middle;
+        background: $science-blue;
+        color: white;
+        margin-bottom: 6px;
+    }
+    @media screen and (min-width: 768px) {
+        ul { order: 1; }
+    }
+    @media screen and (min-width: 650px) {
+        ul li a .slds-text-heading_medium { font-size: 20px; }
+    }
+}
+
+.slds-tabs__nav-scroller--inner{
+    width: 100%;
+}
+
+#create-new-task { 
+    height: 32px;
+    order: 1;
+    @media screen and (min-width: 768px) {
+        order: 2;
+    }
+}
+
+.task-management_tabs-nav {
+    .slds-tabs_default__item { text-transform: none; padding: 0 5px; }
+}
+
+.task-management_tab-content_item {
+    list-style: none;
+    border: solid 1px $catskill-white;
+    position: relative;
+    overflow: hidden;
+    background: $white;
+    &:before {
+        font-family: "myherbalife";
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        bottom: -1px;
+        width: 60px;
+        color: $white;
+        font-size: 2.5em;
+        text-align: center;
+        padding-top: 16px;
+        background-color: $herbalife-mid-green;
+        @media screen and (max-width: 768px) {
+        width: 40px;
+        font-size: 1.5em;
+        }
+        @media screen and (max-width: 550px) {
+        width: 4px;
+            content: '' !important;
+        }
+    }
+}
+
+
+.task-box {
+    list-style: none;
+    border: solid 1px $catskill-white;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 2px;
+    &:before {
+        font-family: "myherbalife";
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        bottom: -1px;
+        width: 60px;
+        color: $white;
+        font-size: 1.75em;
+        text-align: center;
+        padding-top: 15px;
+        background-color: $herbalife-mid-green;
+        @media screen and (max-width: 768px) {
+        width: 40px;
+        font-size: 1.5em;
+        }
+        @media screen and (max-width: 550px) {
+        width: 4px;
+            content: '' !important;
+        }
+    }
+}
+
+
+.cHNC_Task_Item, .cHNC_TaskCard{
+    margin-bottom: 10px;
+    background: $white;
+    border-radius: 2px;
+}
+
+
+
+.task-management_tab-content_item:before {
+    content: "c";
+}
+
+.task-priority i{
+    
+}
+
+.task-management_tab-content_icon-container {
+    display: inline-block;
+	background: $herbalife-mid-green;
+	min-width: 75px;
+	max-width: 75px;
+	padding: 1em;
+	text-align: center;
+    float: left;
+	@media screen and (max-width: 768px) {
+       display: none;
+    
+    }
+}
+
+.task-management_tab-content-details{
+     border-top: 1px solid $lightgrey;
+    display: none;
+    }
+
+.task-box .task-management_description{
+    display: none;
+}
+
+ .task-management_tab-content-details div{
+        display: inline;
+    }
+    
+
+
+@media screen and (max-width: 768px) {
+    
+    .task-management_tab-content-details div{
+        width: 45%;
+        display: inline-block;
+    }    
+    
+  .cHNC_TaskContainerMobile {
+    padding-top: 10px; }	
+	
+     #tbody-downline_tasks th{
+      padding: 15px 0;
+    white-space: pre-wrap;
+      line-height: 15px;
+         width: 86%;
+    }
+    
+    #tbody-downline_tasks th:first-child{
+        width: 33px;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-left: 13px;
+    padding-top: 20px;
+    }
+    
+    .tab-my-tasks_filter-buttons .slds-button_neutral, .tab-my-tasks_filter-buttons .slds-button{
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    
+}
+
+
+@media screen and (max-width: 550px) {
+     .task-management_tab-content_item .slds-media__figure{
+         padding-top: 0px !important;
+    }
+    
+    .task-management_tabs-nav{
+        padding: 0px !important;
+    }
+    
+    
+     .task-management_tab-content_item .slds-media__figure, .task-management_tab-content_item .slds-media__figure--reverse, .task-management_tab-content_item .slds-media__figure_reverse{
+         margin: 0 0 0 0;
+    }
+    
+    .task-management_tab-content-details div{
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .task-management_assigned-by{
+        display: block;
+    }
+    
+    .cHNC_Task_Item .slds-text-heading_small{
+        max-width: 150px;
+    }
+    
+   
+
+    
+}
+
+    /**
+  .task-management_tab-content-details > span, .task-management_tab-content_item__body div:first-child{
+        display: block;
+     border-top: 1px solid #d7d7d7;
+    padding: 1em 1rem;
+      font-size: 15px;
+      color: $anchor-navy;
+      text-align: center;
+    }
+    .task-management_tab-content_item__body div:first-child{
+        background: $herbalife-green;
+        color: $white;
+        text-align: center;
+    }
+    
+    .task-management_table-wrapper {
+        .slds-table_bordered tbody td, .slds-table--bordered tbody td, .slds-table--bordered tbody th{
+            border-top: 0px;
+        }
+        .slds-table_bordered tbody th, .slds-table_striped tbody tr:nth-of-type(even) > th, .slds-table--striped tbody tr:nth-of-type(even) > th{
+            padding: 1em;
+            display: block;
+            background: $herbalife-green;
+            color: $white;
+            width: 100%; 
+            text-align: center;
+        
+            }
+        
+        .slds-table_bordered td:last-child:before {
+        content: "";
+        }
+        
+        .slds-table_bordered td:last-child div{
+            text-align: center;
+        }
+    }
+}**/
+      
+
+.task-management_tab-content_icon-container i{
+    font-size: 3em;
+	color: #ffffff;
+	fill:#ffffff;
+}
+
+.task-management_tab-content_item__body {
+    display: inline-block;
+    @media screen and (max-width:768px){
+        display: block;
+        flex: none;
+        width: 100%;
+        margin-left: 30px;
+    }
+    @media screen and (max-width:550px){
+        display: block;
+        flex: none;
+        width: 100%;
+        margin-left: 10px;
+    }
+    
+        @media screen and (min-width:768px){
+        margin-left: 60px;
+    }
+}
+
+
+.task-management_tab-content_item {
+    background: $white;
+    @media screen and (max-width:768px){
+        padding-left: 30px;
+    }
+    @media screen and (max-width:550px){
+    
+        padding-left: 10px;
+    }
+    
+        padding-left: 60px;
+    
+}
+
+
+
+
+
+.task-management_tab-content_item__button-wrapper, .task-management_tab-content_item__icons-wrapper, .task-management_tab-content_item__icon-wrapper {
+    display: inline-block;
+    padding-top: 22px;
+    float: right;
+	@media screen and (max-width: 768px) {
+	width: 100%;
+        flex: none;
+    text-align: center;
+    padding-top: 0px;
+        button{
+        background: $darkblue;
+        color: $white;
+            svg{
+                fill: #ffffff;
+            }
+         }
+	}
+}
+
+
+.task-management_tab-content_item__icons-wrapper {
+   min-width: 110px;
+}
+
+.task-management_tab-content_item__icon-wrapper {
+   min-width: 50px;
+}
+
+.task-management_tab-content_item__icon {
+    background: $herbalife-grey;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: all .25s ease;
+    display: inline-block;
+    svg {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        fill: white;
+    }
+    &.is-check:hover {
+        background: $herbalife-green;
+    }
+    &.is-close:hover {
+        background: $froly;
+    }
+}
+
+
+
+.tab-my-tasks_filter-buttons {
+    button {
+        color: $salesforce-grey;
+        transition: all .25s ease;
+    }
+    button.is-active, button:hover {
+        background: $herbalife-green;
+        color: white;
+    }
+}
+
+.priority-3 {
+    color: $saffron-mango;
+}
+
+.priority-1 {
+    color: $red;
+}
+
+#tab-pending-tasks .slds-form-element {
+    max-width: 100%;
+    width: 240px;
+}
+.icon-arrow-circle {
+    margin-left: 5px;
+    display: inline-block;
+    color: $science-blue;
+    padding-left: 6px;
+    font-size: 20px;
+    position: relative;
+    transform: translateY(1px);
+    &:after {
+        content: '';
+        position: absolute;
+        top: 1px;
+        left: -1px;
+        width: 19px;
+        height: 19px;
+        border: solid 1px $science-blue;
+        border-radius: 50%;
+    }
+}
