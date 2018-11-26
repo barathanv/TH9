@@ -12,7 +12,7 @@ public class CustomSearchController {
     	return ids;
 	}
 }
-
+	//Commit message for B2
 /* *public class CustomSearchController {
     @AuraEnabled
     public static List<String> searchForIds(String searchText) {
